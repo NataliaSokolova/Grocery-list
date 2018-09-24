@@ -1,4 +1,4 @@
-<<!-- 
+<!-- 
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>-->
-  <div>
+  <div class="container">
+
     <h2> Grocery list manager </h2>
  
     <div class="row">
@@ -20,14 +21,22 @@
                 </div>
             </div>
         </div>
+        
     </div>
- 
+
+    <br/>
+    
+      <button class="btn btn-dark" type="button" (click)="onClickDelete()">
+         <span>Delete</span> 
+       </button>
     <br />
- 
-    <ul class="list-group">
+   
+      <ul class="list-group">
         <li *ngFor="let task of tasks" class="list-group-item">
             <span> {{ task.name }} </span>
         </li>
-    </ul>
- 
-</div>
+      </ul>
+   
+    </div>
+
+    

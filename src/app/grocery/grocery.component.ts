@@ -14,6 +14,11 @@ export class GroceryComponent implements OnInit {
     this.tasks.push({name: this.task});
     this.task = '';
   }
+
+  onClickDelete(){
+    this.tasks.pop();
+  }
+  
   constructor() { }
 
   ngOnInit() {
