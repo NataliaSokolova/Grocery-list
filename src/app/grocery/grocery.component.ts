@@ -11,10 +11,17 @@ export class GroceryComponent implements OnInit {
   tasks = [];
 
   onClick(){
+    if(this.task !=""){
     this.tasks.push({name: this.task});
     this.task = '';
+    }
   }
 
+  removeItem = function(index){
+    this.tasks.splice(index, 1);
+  
+  }
+  
   onClickDelete(){
     this.tasks.pop();
   }

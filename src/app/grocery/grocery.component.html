@@ -8,16 +8,18 @@
   </head>-->
   <div class="container">
 
-    <h2> Grocery list manager </h2>
+    <div>
+      <h1> Grocery list manager </h1>
+    </div> 
  
     <div class="row">
-        <div class="col-xs-6 col-md-4">
+        <div class="">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="enter grocery items" [(ngModel)]="task" />
                 <div class="input-group-btn">
                     <button class="btn btn-primary" type="button" (click)="onClick()">
-        <span class="glyphicon glyphicon-ok"></span>
-        </button>
+                             <span class="glyphicon glyphicon-ok"></span>
+                     </button>
                 </div>
             </div>
         </div>
@@ -26,14 +28,12 @@
 
     <br/>
     
-      <button class="btn btn-dark" type="button" (click)="onClickDelete()">
-         <span>Delete</span> 
-       </button>
+    
     <br />
    
       <ul class="list-group">
-        <li *ngFor="let task of tasks" class="list-group-item">
-            <span> {{ task.name }} </span>
+        <li *ngFor="let task of tasks" let ind = "index" class="list-group-item">
+          <span> {{ task.name }} </span> <span (click) = "removeItem(ind)" class = "cross">x</span> 
         </li>
       </ul>
    
