@@ -7,11 +7,7 @@
    border-radius: 6px;
 
 }
-.row{
-    margin-top: 40px;
-   
-    
-}
+
 .input-group{
     margin-left: 20%;
     margin-right: 20%;
@@ -24,6 +20,7 @@
     background-color:#F8B52E;
     color:#545454;
     border-color: #48596F;
+    
 }
 .btn-dark{
     margin-bottom:20px ;
@@ -31,9 +28,10 @@
 .cross{
     cursor:pointer;
     position: relative;
-    float: right;margin-right: 10px;
+    float: right;margin-right:10px;
     color:white;
     width: 20px;
     height: 20px;
     background: #EB686F;
+    
 }

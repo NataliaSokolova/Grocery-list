@@ -20,8 +20,9 @@ export class GroceryComponent implements OnInit {
   removeItem = function(index){
     this.tasks.splice(index, 1);
   
+ /*deleteItem(todo){   for(let i=0 ;i<= this.todoArray.length ;i++){    if(todo== this.todoArray[i]){     this.todoArray.splice(i,1)    }   }  }*/
+
   }
-  
   onClickDelete(){
     this.tasks.pop();
   }
